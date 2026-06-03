@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic'
 
 async function getNews() {
   try {
-    const res = await fetch('https://harshai.vercel.app/api/news', {
+    const res = await fetch('https://harsh-ai-news.vercel.app/', {
       cache: 'no-store',
     })
     if (res.ok) return await res.json()
